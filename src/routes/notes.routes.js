@@ -1,14 +1,26 @@
-const { Router } = require("express");
-const NotesController = require("../controller/NotesController");
+// routes (2º/5) --- arquivo por onde as requisições são endereçadas
 
 
-const notesRoutes = Router();
+const { Router } = require('express')
 
-const notesController = new NotesController;
+const NotesController = require('../controllers/NotesController')
 
-notesRoutes.get("/", notesController.index);
-notesRoutes.post("/:user_id", notesController.create);
-notesRoutes.get("/:id", notesController.show);
-notesRoutes.delete("/:id", notesController.delete);
+const notesController = new NotesController()
 
-module.exports = notesRoutes;
+const notesRoutes = Router()
+
+const ensureAuthenticated = require('../middlewares/ensureAuthenticated')
+
+
+notesRoutes.use(ensureAuthenticated)
+
+notesRoutes.get('/', notesController.index)
+
+notesRoutes.post('/', notesController.create)
+
+notesRoutes.get('/:id', notesController.show)
+
+notesRoutes.delete('/:id', notesController.delete)
+
+
+module.exports = notesRoutes

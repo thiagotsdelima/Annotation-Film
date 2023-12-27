@@ -1,11 +1,18 @@
-const { Router } = require('express');
-const TagsController = require("../controller/TagsController");
-
-const tagsRoutes = Router();
-
-const tagsController = new TagsController();
-
-tagsRoutes.get("/:user_id", tagsController.index);
+// routes (2º/5) --- arquivo por onde as requisições são endereçadas
 
 
-module.exports = tagsRoutes;
+const { Router } = require('express')
+
+const TagsController = require('../controllers/TagsController')
+
+const tagsController = new TagsController()
+
+const tagsRoutes = Router()
+
+const ensureAuthenticated = require('../middlewares/ensureAuthenticated')
+
+
+tagsRoutes.get('/', ensureAuthenticated, tagsController.index)
+
+
+module.exports = tagsRoutes
