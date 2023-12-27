@@ -1,5 +1,4 @@
-/* database (5º/5) --- local pra guardar os bancos de dados
-   index.js --- qualquer arq. "index" serve pra, quando não se indica o arquivo que quer dentro da pasta, o VS Code busca ele por padrão */
+
 
 
 const sqlite3 = require('sqlite3')

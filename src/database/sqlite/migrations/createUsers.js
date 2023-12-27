@@ -1,5 +1,4 @@
-/* migrations --- forma de se importar dados em SQL pro JS
-                  assim, se automatiza o processo de criação/recriação de tabelas SQL pelo JS */
+
 
 
 const createUsers = `

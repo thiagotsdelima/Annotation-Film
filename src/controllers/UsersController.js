@@ -1,6 +1,4 @@
-/* controllers (3º/5) --- parte responsável pro processar as requisições da aplicação;
-                          é quem vai de fato executar o que o usuário requisitar;
-                          baseado na rota, o controller recebe uma tarefa */
+
 
 
 const { hash, compare } = require('bcryptjs')

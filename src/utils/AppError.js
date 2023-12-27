@@ -1,5 +1,4 @@
-/* utils (4º/5) --- parte responsável por tratar exceções e erros da aplicação
-                    esse arquivo serve pra padronizar a mensagem que aparecerá quando ocorrerem exceções */
+
 
 
 class AppError {

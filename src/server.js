@@ -1,4 +1,4 @@
-// server (1º/5) --- é o arquivo/ponto de entrada da aplicação
+
 
 
 require('express-async-errors')

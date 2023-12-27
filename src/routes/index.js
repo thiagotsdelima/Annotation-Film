@@ -1,4 +1,4 @@
-// index --- esse arquivo serve somente pra unir todas as rotas da aplicação; faz parte do contexto do arquivo "routes (2º/5)"
+
 
 
 const { Router } = require('express')

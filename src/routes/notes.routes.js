@@ -1,4 +1,4 @@
-// routes (2º/5) --- arquivo por onde as requisições são endereçadas
+
 
 
 const { Router } = require('express')

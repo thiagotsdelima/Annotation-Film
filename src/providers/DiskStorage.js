@@ -1,4 +1,4 @@
-// Disk Storage --- arq. que contém as funções salvar/deletar de uma foto vinda de upload
+
 
 
 const fs = require('fs')

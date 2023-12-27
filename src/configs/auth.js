@@ -1,4 +1,4 @@
-// auth --- arq. que guarda as configurações de autenticação da aplicação
+
 
 module.exports = {
 

@@ -1,4 +1,4 @@
-// ensureAuthenticated --- arq. que serve pra garantir a autenticação
+
 
 
 const { verify } = require('jsonwebtoken')
